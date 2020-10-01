@@ -187,7 +187,6 @@ variable "max_size" {
 variable "min_size" {
   description = "The minimum size of the auto scale group"
   type        = string
-  default     = 1
 }
 
 variable "desired_capacity" {

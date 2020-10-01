@@ -166,7 +166,7 @@ There are two ways to specify tags for auto-scaling group in this module - `tags
 | max\_size | The maximum size of the auto scale group | `string` | n/a | yes |
 | metrics\_granularity | The granularity to associate with the metrics to collect. The only valid value is 1Minute | `string` | `"1Minute"` | no |
 | min\_elb\_capacity | Setting this causes Terraform to wait for this number of instances to show up healthy in the ELB only on creation. Updates will not wait on ELB instance number changes | `number` | `0` | no |
-| min\_size | The minimum size of the auto scale group | `string` | `1` | no |
+| min\_size | The minimum size of the auto scale group | `string` | n/a | yes |
 | name | Creates a unique name beginning with the specified prefix | `string` | n/a | yes |
 | placement\_group | The name of the placement group into which you'll launch your instances, if any | `string` | `""` | no |
 | placement\_tenancy | The tenancy of the instance. Valid values are 'default' or 'dedicated' | `string` | `"default"` | no |
